@@ -1,0 +1,18 @@
+{
+  "name": "happyer",
+  "version": "0.0.1",
+  "main": "index.js",
+  "bin": {
+    "happier": "./happier.js",
+    "happyer": "./happier.js"
+  },
+  "repository": "https://github.com/sw-yx/happier.git",
+  "author": "sw-yx <swyx@dontemail.me>",
+  "license": "MIT",
+  "scripts": {
+    "start": "./happier.js me"
+  },
+  "dependencies": {
+    "commander": "^2.20.0"
+  }
+}
