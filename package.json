@@ -10,9 +10,13 @@
   "author": "sw-yx <swyx@dontemail.me>",
   "license": "MIT",
   "scripts": {
-    "start": "./happier.js me"
+    "start": "./happier.js me",
+    "version": "auto-changelog -p --template keepachangelog && git add CHANGELOG.md",
+    "prepublishOnly": "git push && git push --tags && gh-release"
   },
   "dependencies": {
-    "commander": "^2.20.0"
+    "auto-changelog": "^1.14.1",
+    "commander": "^2.20.0",
+    "gh-release": "^3.5.0"
   }
 }
